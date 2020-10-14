@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="row demo  demo2">
+        <div class="top  row">
+            <div class="boxcenter">
+                <div class="logo">
+                    <a href="#"><img src="images/lgo.jpg" alt=""></a>
+                </div>
+                <div>
+                    <div class="menu">
+                        <ul>
+                            <li> <a href="#home"><span> HOME</span></a> </li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="w3.html">MENU</a></li>
+                            <li><a href="wed1.html">ORDER ONLINE</a></li>
+                            <li><a href="wd2.html">CONTACT</a></li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="revie">
+                            <img src="images/hinh5.PNG" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner " id="home">
+            <div class="chu1">
+                <img src="images/chu1.PNG" alt="">
+            </div>
+        </div>
+        <div class="icontop " onclick="topFunction()" id="myBnt" title="Go to top">
+            <i class='fas fa-angle-up' style="font-size: 30px; margin-left: 12px; margin-top: 5px;"></i>
+        </div>
+
+    </header>
+    <section class="demo2 row" id="menu">
+        <div class="boxcenter">
+            <div class="chu"> REQUESTED</div>
+            <div class="line1"></div>
+
+            <a href="#">
+                <div class="boxchu mr demogray mt">
+                    <div class="line"></div>
+                    <div class="soups">
+                        <p><span>SOUPS</span> </p>
+                        <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+                    </div>
+                    <div class="hinh">
+                        <img src="images/hinh9.PNG" alt="">
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="boxchu mr demogray">
+                    <div class="line"></div>
+                    <div class="soups">
+                        <p><span>NOODLES</span> </p>
+                        <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+                    </div>
+                    <div class="hinh">
+                        <img src="images/hinh8.PNG" alt="">
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="boxchu demogray">
+                    <div class="line"></div>
+                    <div class="soups">
+                        <p><span>NOODLES</span> </p>
+                        <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+                    </div>
+                    <div class="hinh">
+                        <img src="images/hinh7.PNG" alt="">
+                    </div>
+                </div>
+            </a>
+            <div class="setmenu">
+                <div class="bgred">
+                    <p> <a href="#">SET MENU</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row" id="about">
+        <div class="banner2">
+            <div class="boxcenter">
+                <div class="textchu1">
+                    <p><span> <span> Our Story Begins In The East</span></p>
+                    <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row">
+        <div class="banner3">
+
+        </div>
+    </section>
+    <section class="row demo3" id="contact">
+        <div class="boxcenter">
+            <div class="make">
+                <p> Make a Reservation</p>
+            </div>
+            <div class="input">
+                <input type="text" name="" id="" placeholder="Date">
+                <input type="text" name="" id="" placeholder="Time">
+                <input type="text" name="" id="" placeholder="Party size">
+                <a href="#"><input type="button" value="Book Now"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="row demo4">
+        <div class="boxcenter">
+            <div class="logo2">
+                <img src="images/logofooter.PNG" alt="">
+            </div>
+            <div class="line2"></div>
+            <div class="textfooter">
+                <div class="text1 mr2">
+                    <p><span>ADDRESS</span> </p>
+                    <p>500 Terry Francois Street San Francisco, CA 94158</p>
+                </div>
+                <div class="text2 mr3">
+                    <p><span>OPENING HOURS</span> </p>
+                    <p>Mon - Fri: 11am - 10pm ​​Sat - Sun: 11am - 12am</p>
+                </div>
+                <div class="text3 mr">
+                    <p><span> CONTACT </span></p>
+                    <p>123-456-7890 info@mysite.com
+
+                    </p>
+                </div>
+                <div class="text4">
+                    <p>FOLLOW
+                    </p>
+                    <p><i class="fa fa-facebook-f mr " style="font-size: 1.5vw;"></i> <i class="fa fa-twitter mr" style="font-size: 1.5vw;"></i> <i class="fa fa-foursquare mr" style="font-size: 1.5vw;"></i> <i class="fa fa-instagram" style="font-size: 1.5vw;"></i></p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $(".top").addClass("menufixed");
+                    $(".top a").addClass("colorw");
+                    $(".revie").addClass("revie1");
+
+
+                } else {
+                    $(".top").removeClass("menufixed");
+                    $(".top a").removeClass("colorw");
+                    $(".revie").removeClass("revie1");
+
+                }
+            })
+        })
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $(".menu a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $(".icontop").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1600, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+        var mybutton = document.getElementById("myBnt");
+
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
